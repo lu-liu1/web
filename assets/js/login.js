@@ -43,7 +43,7 @@ $(function () {
             password: $('#form_reg [name=password]').val(),
         }
         //发起ajax请求提交
-        $.post('http://ajax.frontend.itheima.net/api/reguser',
+        $.post('/api/reguser',
             //需要请求的参数
             data,
             //判断是否请求正确
@@ -90,7 +90,7 @@ $(function () {
         
         $.ajax({
             
-            url:'http://ajax.frontend.itheima.net/api/login',
+            url:'/api/login',
             method:'POST',
             data,           
             success: function(res){
